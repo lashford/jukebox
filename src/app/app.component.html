@@ -2,16 +2,20 @@
 <mat-sidenav-container class="example-container">
 
   <mat-sidenav class="sidenav-content" #sidenav mode="side" [(opened)]="opened">
-    <h2><a (click)="sidenav.toggle()" routerLink="/">home</a></h2>
-    <h2><a routerLink="about">about</a></h2>
-    <h2>Terms & Conditions</h2>
-    <h2>Login / Sign up</h2>
+    <h2><a (click)="sidenav.toggle()" routerLink="/"> <mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Home</a></h2>
+    <h2><a (click)="sidenav.toggle()" routerLink="catalogue"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Catalogue</a></h2>
+    <h2><a (click)="sidenav.toggle()" routerLink="catalogue"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Login / Sign up</a></h2>
+    <h2><a (click)="sidenav.toggle()" routerLink="/"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Terms & Conditions</a></h2>
   </mat-sidenav>
 
   <mat-sidenav-content class="container">
-      <div class="menu">
-        <span (click)="sidenav.toggle()">
+      <div class="menu" (click)="sidenav.toggle()">
+        <span *ngIf="!opened">
           <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+          <p *ngIf="!opened">Menu</p>
+        </span>
+        <span *ngIf="opened">
+          <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
         </span>
       </div>
       <div class="header">

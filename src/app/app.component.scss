@@ -9,10 +9,26 @@
     ". content ."
     ". footer .";
   justify-content: start;
+  color: lime;
 }
 .menu {
+  padding-top: 10px;
+  cursor: pointer;
+  display: flex;
   grid-area: menu;
   color: lime;
+  span {
+    display: flex;
+    padding-left: 5px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+  .mat-icon {
+    transform: scale(2);
+  }
 }
 .header {
   grid-area: header;
@@ -29,7 +45,6 @@
   height: 750px;
   min-height: 750px;
 }
-
 .footer {
   grid-area: footer;
   text-align: center;
@@ -38,8 +53,27 @@
 .sidenav-content {
   min-width: 400px;
   background-image: url("../assets/blue-bk.jpg");
+  h2 {
+    padding-left: 10px;
+  }
 }
 
-.mat-icon {
-  transform: scale(2);
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: lime;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+
+::ng-deep.mat-dialog-container {
+  background-color: black;
+  padding: 0;
+  color: lime;
 }
