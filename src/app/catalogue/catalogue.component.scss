@@ -1,7 +1,15 @@
 .about {
-  padding-left: 100px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 3em;
 }
 .mat-icon {
   cursor: pointer;
   transform: scale(4);
+}
+
+button {
+  .mat-icon {
+    transform: scale(2);
+  }
 }

@@ -1,15 +1,15 @@
 
 <mat-sidenav-container class="example-container">
 
-  <mat-sidenav class="sidenav-content" #sidenav mode="side" [(opened)]="opened">
+  <mat-sidenav class="sidenav-content neon-font" #sidenav mode="side" [(opened)]="opened">
     <h2><a (click)="sidenav.toggle()" routerLink="/"> <mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Home</a></h2>
     <h2><a (click)="sidenav.toggle()" routerLink="catalogue"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Catalogue</a></h2>
-    <h2><a (click)="sidenav.toggle()" routerLink="catalogue"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Login / Sign up</a></h2>
-    <h2><a (click)="sidenav.toggle()" routerLink="/"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Terms & Conditions</a></h2>
+    <h2><a (click)="sidenav.toggle()" routerLink="/"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Login / Sign up</a></h2>
+    <h2><a (click)="openTermsModal(); sidenav.toggle()" routerLink="#"><mat-icon aria-hidden="false" aria-label="label icon">label</mat-icon> Terms & Conditions</a></h2>
   </mat-sidenav>
 
   <mat-sidenav-content class="container">
-      <div class="menu" (click)="sidenav.toggle()">
+      <div class="menu neon-font" (click)="sidenav.toggle()">
         <span *ngIf="!opened">
           <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
           <p *ngIf="!opened">Menu</p>
@@ -18,13 +18,13 @@
           <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
         </span>
       </div>
-      <div class="header">
+      <div class="header neon-font">
         <h1>Jukebox Comprehension</h1>
       </div>
     <div class="content">
       <router-outlet></router-outlet>
     </div>
-    <div class="footer">
+    <div class="footer neon-font">
       <p>&copy; 2021 Jukebox Comprehension</p>
     </div>
   </mat-sidenav-content>

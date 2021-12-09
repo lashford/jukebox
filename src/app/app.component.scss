@@ -34,6 +34,10 @@
   grid-area: header;
   text-align: center;
   color: lime;
+  h1 {
+    font-size: 2.5em;
+  }
+
 }
 .content {
   background: #11ffee00 url("../assets/jukebox-bg.png") no-repeat center top;
@@ -60,6 +64,7 @@
 
 a:link {
   text-decoration: none;
+  color: lime;
 }
 a:visited {
   text-decoration: none;
@@ -67,13 +72,25 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+  color: lime;
 }
 a:active {
   text-decoration: underline;
+  color: lime;
 }
 
 ::ng-deep.mat-dialog-container {
   background-color: black;
-  padding: 0;
+  padding: 5px;
+  margin: 15px;
+  border: 3px solid lime;
+  outline:none;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  /* create a BIG glow */
+  box-shadow: 0px 0px 48px;
+  -moz-box-shadow: 0px 0px 48px;
+  -webkit-box-shadow: 0px 0px 48px;
   color: lime;
 }

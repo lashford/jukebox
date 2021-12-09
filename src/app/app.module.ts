@@ -10,13 +10,17 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatDialogModule} from "@angular/material/dialog";
 import {AboutModalComponent} from './about-modal/about-modal.component';
 import {CatalogueComponent} from "./catalogue/catalogue.component";
+import {TermsModalComponent} from "./terms-modal/terms-modal.component";
+import {ContactModalComponent} from "./contact-modal/contact-modal.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CatalogueComponent,
-    AboutModalComponent
+    AboutModalComponent,
+    TermsModalComponent,
+    ContactModalComponent
   ],
     imports: [
         BrowserModule,
